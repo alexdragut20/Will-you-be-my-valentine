@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Will You Be My Valentine?</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="background-glow" aria-hidden="true"></div>
+  <div class="floating-hearts" aria-hidden="true">
+    <span style="--i: 1">&#10084;</span>
+    <span style="--i: 2">&#10084;</span>
+    <span style="--i: 3">&#10084;</span>
+    <span style="--i: 4">&#10084;</span>
+    <span style="--i: 5">&#10084;</span>
+    <span style="--i: 6">&#10084;</span>
+    <span style="--i: 7">&#10084;</span>
+    <span style="--i: 8">&#10084;</span>
+  </div>
+
+  <main class="stage">
+    <h1 class="title">A little surprise</h1>
+    <p class="subtitle">Dear Melania, please open the envelope</p>
+
+    <button type="button" class="envelope" id="envelope" aria-label="Open envelope">
+      <span class="envelope-liner"></span>
+      <span class="envelope-paper">Open me</span>
+      <span class="envelope-flap"></span>
+      <span class="envelope-front"></span>
+      <span class="seal">&#10084;</span>
+    </button>
+  </main>
+
+  <section class="overlay" id="overlay" aria-hidden="true">
+    <div class="modal question-card" id="questionCard" role="dialog" aria-modal="true" aria-labelledby="questionTitle">
+      <p class="modal-kicker">My heart has a question...</p>
+      <h2 id="questionTitle">Will you be my valentine?</h2>
+      <div class="actions" id="actions">
+        <button type="button" class="btn yes" id="yesBtn">Yes</button>
+        <button type="button" class="btn no" id="noBtn">No</button>
+      </div>
+    </div>
+
+    <div class="modal success-card hidden" id="successCard" role="status" aria-live="polite">
+      <h3>Great!</h3>
+      <p>Great, then see you at Akos Restaurant on 14th february at 16:30, Love you !</p>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
