@@ -52,6 +52,7 @@ valentine-site/
 ├── script.js
 ├── LICENSE
 ├── CONTRIBUTING.md
+├── CHANGELOG.md
 └── README.md
 ```
 
