@@ -11,8 +11,7 @@ A romantic, single-page interactive website with an animated envelope, a playful
 - Question modal: **"Will you be my valentine?"**
 - Evasive **No** button (desktop + mobile tap/press)
 - Dynamic `No` button text: _Are you sure?_, _Think again_, etc.
-- Success invitation message:
-  - **"Great, then see you at Akos Restaurant on 14th february at 16:30, Love you !"**
+- Custom success invitation message (fully editable)
 - Diamond-like glitter/reflection effect on `Yes`
 - Responsive design for desktop and mobile
 
@@ -21,7 +20,7 @@ A romantic, single-page interactive website with an animated envelope, a playful
 ### 1) Run locally
 
 ```bash
-cd /Users/alexandrudragut/Codex_projects/valentine-site
+cd <your-project-folder>
 python3 -m http.server 8765
 ```
 
@@ -30,7 +29,7 @@ Open: [http://localhost:8765](http://localhost:8765)
 ### 2) Access from another device on the same network
 
 ```bash
-cd /Users/alexandrudragut/Codex_projects/valentine-site
+cd <your-project-folder>
 python3 -m http.server 8765 --bind 0.0.0.0
 ```
 
@@ -40,10 +39,10 @@ Then open from another device:
 http://<your-local-ip>:8765
 ```
 
-Example:
+Example URL:
 
 ```text
-http://192.168.0.161:8765
+http://192.168.1.24:8765
 ```
 
 ## Project Structure
@@ -63,16 +62,21 @@ valentine-site/
 
 ### Change intro text
 
-Edit in `index.html`:
+Edit the subtitle in `index.html`.
 
-- `Dear Melania, please open the envelope`
+Example text:
+
+- `Dear [Name], please open the envelope`
 
 ### Change question and invitation
 
-Edit in `index.html`:
+Edit the modal question and success message in `index.html`.
 
+Example values:
 - `Will you be my valentine?`
-- `Great, then see you at Akos Restaurant on 14th february at 16:30, Love you !`
+- `Great, then see you at [Place] on [Date] at [Time], Love you !`
+
+Tip: replace name, place, date, and time with your own details.
 
 ### Change "No" button messages
 
@@ -98,6 +102,13 @@ In `styles.css`, adjust sparkle intensity and motion in:
    - Branch: `main`
    - Folder: `/ (root)`
 4. Save and wait for deployment.
+
+## Reuse This Template
+
+1. Fork this repo, or use **Use this template** on GitHub.
+2. Edit `index.html` text content for your own message.
+3. Adjust animation and sparkle settings in `styles.css` and `script.js`.
+4. Deploy with GitHub Pages.
 
 ## Contributing
 
